@@ -7,7 +7,7 @@
 %global inst_dir %{moz_extensions}/%{firefox_app_id}/%{src_ext_id}
 
 Name:           mozilla-downthemall
-Version:        2.0.14
+Version:        2.0.15
 Release:        1%{?dist}
 Summary:        The first and only download manager/accelerator built inside Firefox
 
