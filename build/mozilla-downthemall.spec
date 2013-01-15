@@ -8,7 +8,7 @@
 
 Name:           mozilla-downthemall
 Version:        2.0.15
-Release:        1%{?dist}
+Release:        1%{?dist}.1
 Summary:        The first and only download manager/accelerator built inside Firefox
 
 Group:          Applications/Internet
@@ -44,6 +44,9 @@ rm -rf %{buildroot}
 %{inst_dir}.xpi
 
 %changelog
+* Tue Jan 15 2013 Chris Smart <chris@kororaa.org>- 2.0.15-1
+- Upstream 2.0.15 release.
+
 * Wed Sep 12 2012 Chris Smart <chris@kororaa.org>- 2.0.14-1
 - Upstream 2.0.14 release.
 
