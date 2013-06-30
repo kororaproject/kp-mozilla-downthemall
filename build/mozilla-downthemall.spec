@@ -7,8 +7,8 @@
 %global inst_dir %{moz_extensions}/%{firefox_app_id}/%{src_ext_id}
 
 Name:           mozilla-downthemall
-Version:        2.0.15
-Release:        1%{?dist}.1
+Version:        2.0.16
+Release:        1%{?dist}
 Summary:        The first and only download manager/accelerator built inside Firefox
 
 Group:          Applications/Internet
@@ -44,6 +44,9 @@ rm -rf %{buildroot}
 %{inst_dir}.xpi
 
 %changelog
+* Sun Jun 16 2013 Chris Smart <csmart@kororaproject.org>- 2.0.16-1
+- Upstream 2.0.16 release.
+
 * Tue Jan 15 2013 Chris Smart <chris@kororaa.org>- 2.0.15-1
 - Upstream 2.0.15 release.
 
