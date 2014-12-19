@@ -7,7 +7,7 @@
 %global inst_dir %{moz_extensions}/%{firefox_app_id}/%{src_ext_id}
 
 Name:           mozilla-downthemall
-Version:        2.0.16
+Version:        2.0.17
 Release:        1%{?dist}
 Summary:        The first and only download manager/accelerator built inside Firefox
 
@@ -22,9 +22,9 @@ BuildRequires:  zip
 #Requires:      firefox
 
 %description
-DownThemAll is all you can desire from a download manager: 
-it features an advanced accelerator that increases speed up to 4x 
-and it allows you to pause and resume downloads at any time.
+DownThemAll is all you can desire from a download manager: it features an
+advanced accelerator that increases speed up to 4x and it allows you to pause
+and resume downloads at any time.
 
 %prep
 #%setup -q -c
@@ -44,6 +44,10 @@ rm -rf %{buildroot}
 %{inst_dir}.xpi
 
 %changelog
+* Sat Jul 26 2014 Ian Firns <firnsy@kororaproject.org>- 2.0.17-1
+- Upstream 2.0.17 release.
+- Re-wrapped description.
+
 * Sun Jun 16 2013 Chris Smart <csmart@kororaproject.org>- 2.0.16-1
 - Upstream 2.0.16 release.
 
