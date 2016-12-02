@@ -8,14 +8,14 @@
 %global firefox_inst_dir %{moz_extensions}/%{firefox_app_id}
 
 Name:           mozilla-downthemall
-Version:        2.0.18
+Version:        3.0.8
 Release:        1%{?dist}
 Summary:        The first and only download manager/accelerator built inside Firefox
 
 Group:          Applications/Internet
 License:        GPLv2
 URL:            https://addons.mozilla.org/en-US/firefox/addon/downthemall/
-Source0:        https://addons.cdn.mozilla.net/user-media/addons/201/downthemall-%{version}-sm+fx.xpi
+Source0:        https://addons.cdn.mozilla.net/user-media/addons/201/downthemall-%{version}-fx+sm.xpi
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
@@ -41,6 +41,9 @@ rm -rf %{buildroot}
 %{inst_dir}.xpi
 
 %changelog
+* Fri Dec 7 2016 Chris Smart <csmart@kororaproject.org>- 3.0.8-1
+- Upstream 3.0.8 release.
+
 * Thu Jan 7 2016 Chris Smart <csmart@kororaproject.org>- 2.0.18-1
 - Upstream 2.0.18 release.
 - Use signed mozilla xpi so that it works with Firefox 43
